@@ -23,6 +23,7 @@ type Command struct {
 	Short string
 	// Long is the long message shown in the 'help <this-command>' output.
 	Long string
+
 	// SetOptions:
 	SetOptions func(c *Command) error
 	// Parse:
