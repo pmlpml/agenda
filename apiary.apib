@@ -5,9 +5,9 @@ HOST: http://agenda12.apiblueprint.org/
 
 Agenda is a simple API allowing consumers to schedule meeting on-line
 
-# Group Users
+# Group User
 
-Resources related to users in the API.
+Resource operations related to a user in the API.
 
 ## User-Key [/v1/user/getkey{?username,password}]
 
@@ -26,6 +26,10 @@ get a security key for operations later
             "permissions":["user","admin"]
         }
         
+
+# Group Users
+
+Resources related to a users in the API.
 
 ## Users Collection [/v1/users{?key}]
 
@@ -83,6 +87,7 @@ get a security key for operations later
 + Response 200 (application/json)
 
         {
+            "id" : 1
             "username":"zhang3"
             "password":"zhang"
             "email":"zhang3@mail2.sysu.edu.cn"
